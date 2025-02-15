@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Scene.cpp">
+      <Filter>Scene List</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Scene List</Filter>
+    </ClCompile>
+    <ClCompile Include="StageScene.cpp">
+      <Filter>Scene List\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>Scene List\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="FPS.cpp">
+      <Filter>Applied for All Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="LoopCondition.cpp">
+      <Filter>Applied for All Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultScene.cpp">
+      <Filter>Scene List\Result</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Scene.h">
+      <Filter>Scene List</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Scene List</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleScene.h">
+      <Filter>Scene List\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="StageScene.h">
+      <Filter>Scene List\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="LoopCondition.h">
+      <Filter>Applied for All Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="FPS.h">
+      <Filter>Applied for All Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Screen.h">
+      <Filter>Applied for All Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultScene.h">
+      <Filter>Scene List\Result</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Scene List">
+      <UniqueIdentifier>{c8957c6d-5216-46df-a83d-6170ccf1225d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene List\Title">
+      <UniqueIdentifier>{9e17d495-b7e1-4b14-8ba2-74be13597e68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene List\Tutorial">
+      <UniqueIdentifier>{10a3d7a6-2ab1-4f35-b765-527701ab8273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene List\Stage">
+      <UniqueIdentifier>{52cd1e03-3902-438b-99d8-b93e1bc7e523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene List\Result">
+      <UniqueIdentifier>{7da35284-4f24-47f8-b5bd-e44cd813d849}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene List\GameOver">
+      <UniqueIdentifier>{170e9fec-c555-438e-92be-32cfb8ceb32d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene List\Loading">
+      <UniqueIdentifier>{1714c6f8-5142-4753-9b98-7d887e4007f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Applied for All Scene">
+      <UniqueIdentifier>{6f262e35-2415-40c8-9ab0-f73ffe4885ae}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
