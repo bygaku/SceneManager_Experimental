@@ -7,16 +7,16 @@
 
 bool LoopCondition()
 {
-	if (ProcessMessage() != 0)				
+	if (ProcessMessage())				
 		return false;
 
-	if (ScreenFlip() != 0)					
+	if (ScreenFlip())					
 		return false;
 
-	if (ClearDrawScreen() != 0)				
+	if (ClearDrawScreen())				
 		return false;
 
-	if (CheckHitKey(KEY_INPUT_ESCAPE) >= 1)
+	if (CheckHitKey(KEY_INPUT_ESCAPE))
 		return false;
 
 	return true;
