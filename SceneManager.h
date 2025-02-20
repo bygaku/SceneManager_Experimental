@@ -23,7 +23,7 @@ public:
     /// @param sceneName 追加するシーン名
     template <typename SceneKind>
     inline auto Add(const std::string_view sceneName)
-        -> typename std::enable_if<std::is_base_of<SceneBase, SceneKind>::value, SceneKind>::type
+        -> typename std::enable_if<std::is_base_of<SceneBase, SceneKind>::value, void>::type
     {
         m_scenes[sceneName] = new SceneKind{ *this };
 
@@ -33,8 +33,6 @@ public:
             m_currentScene = m_scenes[sceneName];
             m_currentScene->Initialize();
         }
-
-        return *this;
     };
 
     /// @brief シーンを切り替えます。

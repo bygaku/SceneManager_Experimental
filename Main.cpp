@@ -30,18 +30,19 @@ int WINAPI WinMain(_In_		HINSTANCE hInstance,
 		SetMouseDispFlag(TRUE);
 	}
 
-	SceneManager sceneManager;
+	auto* sceneManager = new SceneManager();
 
-	sceneManager.Add<TitleScene> ("TitleScene");
-	sceneManager.Add<StageScene> ("StageScene");
-	sceneManager.Add<ResultScene>("ResultScene");
+	sceneManager->Add<TitleScene> ("TitleScene");
+	sceneManager->Add<StageScene> ("StageScene");
+	sceneManager->Add<ResultScene>("ResultScene");
 
 	while (LoopCondition())
 	{
-		sceneManager.Update();
-		sceneManager.Draw();
+		sceneManager->Update();
+		sceneManager->Draw();
 	}
 
+	delete sceneManager;
 	DxLib_End();
 
 	return 0;
